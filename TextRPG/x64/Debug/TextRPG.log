@@ -1,0 +1,4 @@
+﻿  TextRPG.cpp
+C:\Users\MKA\source\repos\TextRPG\TextRPG\engine.h(16,16): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
+C:\Users\MKA\source\repos\TextRPG\TextRPG\engine.h(16,18): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
+  TextRPG.vcxproj -> C:\Users\MKA\source\repos\TextRPG\x64\Debug\TextRPG.exe
