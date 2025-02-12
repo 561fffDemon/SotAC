@@ -4,6 +4,7 @@
 #include <windows.h>
 #include <sstream>
 #include <thread>
+#include <iomanip>
 
 // Functions for Visual/Gameplay
 int delay = 25;
@@ -86,7 +87,7 @@ void TextSpeedMenu() {
 			}
 
 			xy(10, 6);
-			cout << List[selected] << " " << delay;
+			cout << List[selected] << " " << setw(3) << delay;
 			xy(0, 0);
 			wait(100);
 		};
@@ -99,7 +100,7 @@ void TextSpeedMenu() {
 			}
 
 			xy(10, 6);
-			cout << List[selected] << " " << delay;
+			cout << List[selected] << " " << setw(3) << delay;
 			xy(0, 0);
 			wait(100);
 		};
@@ -119,7 +120,7 @@ void Settings() {
 	split("Settings", '-', 3, 1);
 	xy(0, 0);
 
-	string List[3] = { "Language", "Playback speed", "Return to Menu" };
+	string List[3] = { "Language", "Playback speed (delay)", "Return to Menu" };
 	PrintList(10, 6, 2, 3, List);
 
 	int selected = 0;
