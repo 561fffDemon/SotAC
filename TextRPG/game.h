@@ -59,7 +59,7 @@ void Settings();
 
 void TextSpeedMenu() {
 	clear();
-	split("Playback speed", '-', 3, 1);
+	split("Playback speed (delay)", '-', 3, 1);
 	xy(0, 0);
 
 	string List[20] =
@@ -163,6 +163,7 @@ void Settings() {
 				break;
 			case 1:
 				TextSpeedMenu();
+				quit = true;
 				break;
 			case 2:
 				wait(100);
@@ -220,9 +221,11 @@ void Menu() {
 			switch (selected) {
 			case 0:
 				Game();
+				quit = true;
 				break;
 			case 1:
 				Settings();
+				quit = true;
 				break;
 			case 2:
 				clear();
